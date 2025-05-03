@@ -1,0 +1,107 @@
+.pageContainer {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+
+.section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 1rem;
+  scrollbar-width: none;
+}
+
+.projectsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.projectCard {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #4ecdc4;
+}
+
+.projectCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Cantarell", sans-serif;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.projectLink {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #4ecdc4;
+  color: #121212;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  align-self: flex-start;
+}

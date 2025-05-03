@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html,
+body,
+#root,
+.App {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100vw;
+  font-family: "Epilogue", sans-serif;
+  height: 100vh;
+}
+
+/* Dock (just for completeness) */
+.dock {
+  position: fixed;
+  bottom: 0;
+  width: 80%; /* Adjust width as needed */
+  max-width: 500px; /* Optional: limits the dock's width for large screens */
+  display: flex;
+  justify-content: center; /* Centers content within the dock */
+  gap: 50px; /* Space between icons */
+  background-color: #212529;
+  padding: 10px 0;
+  z-index: 10;
+  align-items: center;
+  left: 50%; /* Positions the dock at the middle of the page */
+  transform: translateX(-50%); /* Corrects alignment to perfectly center it */
+  border-radius: 30px; /* Optional: adds rounded corners */
+  max-height: 40px;
+  height: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle drop shadow */
+  transition: max-width 0.2s ease, height 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.dock img {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.dock img:hover {
+  transform: scale(1.8);
+  z-index: 10;
+  color: #6c757d;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: white;
+  padding: 4px 8px;
+  font-size: 1rem;
+  border-radius: 7px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 999;
+}
+
+.dock span {
+  border: #d3d6da 1px solid;
+  height: 15px;
+}
+
+.dock p {
+  color: white;
+  cursor: pointer;
+}

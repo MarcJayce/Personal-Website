@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Dock() {
   const [tooltip, setTooltip] = useState({
@@ -37,7 +38,7 @@ function Dock() {
   return (
     <>
       <div className="dock" ref={dockRef}>
-        <a href="/">
+        <Link to="/">
           <img
             className="icon"
             src="/assets/home.svg"
@@ -47,8 +48,8 @@ function Dock() {
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           />
-        </a>
-        <a href="/about">
+        </Link>
+        <Link to="/about">
           <img
             className="icon"
             src="/assets/about.svg"
@@ -58,8 +59,8 @@ function Dock() {
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           />
-        </a>
-        <a href="/projects">
+        </Link>
+        <Link to="/projects">
           <img
             className="icon"
             src="/assets/projects.svg"
@@ -69,7 +70,7 @@ function Dock() {
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           />
-        </a>
+        </Link>
         <span></span>
         <a
           href="https://www.linkedin.com/in/marc-jayce-cenidoza-50333424a/"

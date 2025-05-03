@@ -4,11 +4,54 @@
   min-height: 100vh;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin: 0;
   padding: 2rem 0;
   box-sizing: border-box;
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  .projectsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .projectsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .projectCard h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1.5rem 0.5rem;
+  }
+  .name {
+    font-size: 1.8rem;
+  }
+  .projectsContainer {
+    grid-template-columns: 1fr;
+  }
+  .projectLink {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .section {

@@ -83,7 +83,7 @@ const MainPage = () => {
           }}
         >
           <img
-            src="/src/assets/Profile.jpg"
+            src="/assets/Profile.jpg"
             alt="Placeholder"
             style={{
               width: "100%",

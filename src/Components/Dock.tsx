@@ -37,10 +37,10 @@ function Dock() {
   return (
     <>
       <div className="dock" ref={dockRef}>
-        <a href="/Main">
+        <a href="/">
           <img
             className="icon"
-            src="/src/assets/home.svg"
+            src="/assets/home.svg"
             data-name="Home"
             alt="Home"
             onMouseEnter={handleMouseEnter}
@@ -51,7 +51,7 @@ function Dock() {
         <a href="/about">
           <img
             className="icon"
-            src="/src/assets/about.svg"
+            src="/assets/about.svg"
             data-name="About"
             alt="About"
             onMouseEnter={handleMouseEnter}
@@ -62,7 +62,7 @@ function Dock() {
         <a href="/projects">
           <img
             className="icon"
-            src="/src/assets/projects.svg"
+            src="/assets/projects.svg"
             data-name="Projects"
             alt="Projects"
             onMouseEnter={handleMouseEnter}
@@ -77,7 +77,7 @@ function Dock() {
         >
           <img
             className="icon"
-            src="/src/assets/link.svg"
+            src="/assets/link.svg"
             data-name="Linkedin"
             alt="Linkedin"
             onMouseEnter={handleMouseEnter}
@@ -88,7 +88,7 @@ function Dock() {
         <a href="https://github.com/MarcJayce" target="_blank">
           <img
             className="icon"
-            src="/src/assets/github.svg"
+            src="/assets/github.svg"
             data-name="Github"
             alt="Github"
             onMouseEnter={handleMouseEnter}

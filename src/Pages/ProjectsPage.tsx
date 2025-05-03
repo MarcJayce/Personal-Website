@@ -16,14 +16,14 @@ const ProjectsPage = () => {
       description:
         "A To do list app that allows users to add, edit, and delete tasks",
       url: "https://marcjayce.github.io/TO-DO/",
-      image: "/src/assets/to-do.png",
+      image: "/assets/to-do.png",
     },
     {
       id: 2,
       title: "Project Calculator",
       description: "A Calculator app that performs basic arithmetic operations",
       url: "https://marcjayce.github.io/Calculator-/",
-      image: "/src/assets/Calculator.png",
+      image: "/assets/Calculator.png",
     },
   ];
 

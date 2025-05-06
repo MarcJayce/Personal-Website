@@ -3,12 +3,14 @@ import Dock from "./Components/Dock";
 import MainPage from "./Pages/MainPage";
 import AboutPage from "./Pages/AboutPage";
 import ProjectsPage from "./Pages/ProjectsPage";
+import CursorLight from "./Components/CursorLight";
 import "./App.css";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <CursorLight />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/about" element={<AboutPage />} />

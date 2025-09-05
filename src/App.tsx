@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="App">
+      
         <CursorLight />
         <Routes>
           <Route path="/" element={<MainPage />} />
@@ -17,7 +17,7 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
         <Dock />
-      </div>
+
     </Router>
   );
 }

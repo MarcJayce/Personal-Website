@@ -110,22 +110,6 @@ const ProjectsPage = () => {
     },
     {
       id: 2,
-      title: "Project Calculator",
-      description: "A Calculator app that performs basic arithmetic operations",
-      detailedDescription:
-        "A modern calculator application that provides basic arithmetic operations with a clean and intuitive interface. The calculator supports keyboard input and maintains calculation history.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      features: [
-        "Basic arithmetic operations",
-        "Keyboard support",
-        "Calculation history",
-        "Responsive design",
-      ],
-      url: "https://marcjayce.github.io/Calculator-/",
-      image: "/assets/Calculator.png",
-    },
-    {
-      id: 3,
       title: "Project To-Do List",
       description:
         "A To do list app that allows users to add, edit, and delete tasks",
@@ -142,7 +126,7 @@ const ProjectsPage = () => {
       image: "/assets/to-do.png",
     },
     {
-      id: 4,
+      id: 3,
       title: "FitForge Fitness App",
       description: "Social platform that let's you track calories and workout",
       detailedDescription:
@@ -163,6 +147,23 @@ const ProjectsPage = () => {
       ],
       url: "https://github.com/MarcJayce/UpliftFitness",
       image: "/assets/FitForge.png",
+    },
+    {
+      id: 4,
+      title: "Hiring Mangagement System",
+      description:
+        "A System designed to help companies manage their hiring process",
+      detailedDescription:
+        "This system is designed to handle the entire hiring lifecycle, from job posting to onboarding. It allows HR teams to create and manage job listings, receive applications, and evaluate candidates based on predefined criteria. The system can integrate with third-party services for background checks, skill assessments, and automated email notifications.",
+      technologies: ["Bootstrap", "Laravel", "JavaScript"],
+      features: [
+        "Automated Email Notifications",
+        "Onboarding Management",
+        "Role-Based Access Control",
+        "Job Posting & Management",
+      ],
+      url: "https://www.google.com/error",
+      image: "/assets/hiring.png",
     },
   ];
 

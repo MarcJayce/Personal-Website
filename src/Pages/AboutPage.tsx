@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styles from "./MainPage.module.css";
+import styles from "./AboutPage.module.css";
 import SkillBadge from "../Components/SkillBadge";
 
 const fadeIn = {
@@ -21,13 +21,6 @@ const AboutPage = () => {
         initial="hidden"
         animate="visible"
         variants={fadeIn}
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          height: "100vh",
-          flexDirection: "row",
-          padding: "4rem 2rem",
-        }}
       >
         <div style={{ flex: 1, padding: "20px" }}>
           <motion.h1
@@ -80,6 +73,7 @@ const AboutPage = () => {
             boxSizing: "border-box",
             boxShadow:
               "0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.25)",
+        
           }}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}

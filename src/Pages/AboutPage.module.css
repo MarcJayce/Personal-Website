@@ -23,7 +23,6 @@
   align-items: flex-start;
   justify-content: center;
   margin: 0;
-  padding: 2rem 0;
   box-sizing: border-box;
   font-style: italic;
   overflow: auto;
@@ -34,6 +33,7 @@
 @media (max-width: 1024px) {
   .section {
     padding: 3rem 1.5rem;
+    margin-top: 0;
   }
   .name {
     font-size: 2.5rem;
@@ -44,16 +44,11 @@
 }
 
 @media (max-width: 768px) {
-  .pageContainer {
-    padding: 0;
-     margin-top: 0 !important;
-  }
   .section {
     flex-direction: column;
     text-align: center;
     padding: 2rem 1rem;
     overflow: hidden;
-    
   }
   .profileImage {
     width: 250px;
@@ -71,11 +66,7 @@
 }
 
 @media (max-width: 480px) {
-  .pageContainer {
-    padding: 0;
-    margin-top: -120px !important;
-  }
-  .section {
+   .section {
     padding: 1.5rem 0.5rem;
     gap: 1rem;
   }
@@ -195,7 +186,6 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin-top: 120px;
 }
 
 .name {

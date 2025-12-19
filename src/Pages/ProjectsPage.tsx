@@ -110,20 +110,20 @@ const ProjectsPage = () => {
     },
     {
       id: 2,
-      title: "Project To-Do List",
+      title: "Gamified Interactive Motion Capture Game",
       description:
-        "A To do list app that allows users to add, edit, and delete tasks",
+        "An interactive game that uses motion capture to engage players in physical activities",
       detailedDescription:
-        "A comprehensive task management application that helps users organize their daily activities. The app provides an intuitive interface for managing tasks with real-time updates.",
-      technologies: ["Object-Oriented JS", "Webpack", "Local Storage"],
+        "A gamified motion capture application that tracks player movements in real time using a webcam or motion sensor. Players can complete challenges, earn points, and improve their fitness while interacting with dynamic game elements.",
+      technologies: ["TypeScript", "Express", "PoseApi", "Firebase"],
       features: [
-        "Create, edit, and delete tasks",
-        "Mark tasks as complete",
-        "Persistent storage using browser's local storage",
-        "Responsive design for mobile and desktop",
+        "Real-time motion tracking using PoseNet",
+        "Interactive game challenges",
+        "Score and progress tracking",
+        "Responsive design for various screen sizes",
       ],
-      url: "https://marcjayce.github.io/TO-DO/",
-      image: "/assets/to-do.png",
+      url: "https://mapua-gamecapture.vercel.app/",
+      image: "/assets/Gamified.png",
     },
     {
       id: 3,

@@ -162,7 +162,7 @@ const ProjectsPage = () => {
         "Role-Based Access Control",
         "Job Posting & Management",
       ],
-      url: "https://www.google.com/error",
+      url: "https://github.com/MarcJayce/Hiring-Management-system",
       image: "/assets/hiring.png",
     },
   ];
